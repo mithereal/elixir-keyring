@@ -43,7 +43,7 @@ end
 
 def init(_) do
 
-children = [worker(Keyring, [], restart: :transient)]
+children = [worker(Keyring.Server, [], restart: :transient)]
 supervise(children, [strategy: :simple_one_for_one])
 end
 
