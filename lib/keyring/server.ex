@@ -5,7 +5,7 @@ defmodule Keyring.Server do
   require Logger
 
 
-  @moduledoc "A Simple Keyring to store your api keys."
+  @moduledoc "A Simple Keyring Server to Store Your API Keys."
 
 
   @registry_name :keyring_registry

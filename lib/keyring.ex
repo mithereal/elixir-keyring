@@ -1,6 +1,6 @@
 defmodule Keyring do
 
-@moduledoc "A Simple Keyring to store your api keys."
+@moduledoc "A Keyring Module to Store Your API Keys."
 
 alias Keyring.Supervisor, as: Sup
 alias Keyring.Server, as: Server
