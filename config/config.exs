@@ -10,7 +10,7 @@ use Mix.Config
 
 # You can configure your application as:
 #
-     config :keyring, keys: [google: " "]
+#     config :keyring, keys: [google: " "]
 #
 # and access this configuration in your application as:
 #

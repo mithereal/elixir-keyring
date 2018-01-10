@@ -1,16 +1,16 @@
 # Keyring
 
-This is a general keyring store for holding api keys suck as google etc
+This is a general keyring store for holding api keys such as google etc
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+If [available in Hex](https://hex.pm/docs/keyring), the package can be installed
 by adding `keyring` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:keyring, "~> 0.1.0"}
+    {:keyring, "~> 0.1.2"}
   ]
 end
 ```

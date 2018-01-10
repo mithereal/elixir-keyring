@@ -1,5 +1,7 @@
 defmodule Keyring.Supervisor do
+
 use Supervisor
+
 require Logger
 
 @registry_name :keyring_registry
@@ -9,12 +11,12 @@ def start_link do
 Supervisor.start_link(__MODULE__, nil, name: __MODULE__)
 end
 
-def start_keyring(key_id) do
+def start(key_id) do
 
 Supervisor.start_child(__MODULE__, [ key_id ])
 end
 
-def stop_keyring(key_id) do
+def stop(key_id) do
 
  case Registry.lookup(@registry_name,  key_id) do
 
@@ -37,7 +39,7 @@ def find_or_create_process(key_id)  do
 
    {:ok, key_id}
  else
-   key_id |> start_key
+   key_id |> start
  end
 end
 
@@ -58,4 +60,6 @@ Supervisor.which_children(__MODULE__)
    end)
  |> Enum.sort
 end
+
+
 end
