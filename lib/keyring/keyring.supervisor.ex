@@ -4,6 +4,8 @@ use Supervisor
 
 require Logger
 
+@moduledoc "A Supervisor to Start and Manage your Keyrings."
+
 @registry_name :keyring_registry
 
 def start_link do
